@@ -35,3 +35,5 @@ export const compare = atom({
   key: "compare",
   default: "empty",
 });
+
+/* selector 타입 공부 */
