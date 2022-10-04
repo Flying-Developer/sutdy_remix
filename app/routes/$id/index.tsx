@@ -100,3 +100,6 @@ const Content = styled.div`
 	height:100px;
 	font-size:20px;
 `;
+
+
+/* d 이상입니다 !!  */

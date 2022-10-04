@@ -10,7 +10,9 @@ export default function CreateToDo() {
   const setToDos= useSetRecoilState(toDoState);
   const { register, handleSubmit, setValue } = useForm<IForm>();
   const onValid = ({toDo}:IForm) => {
-    setToDos((oldToDos) => [{text:toDo,id:Date.now(), category:"TO_DO"},...oldToDos]);
+    setToDos((oldToDos) => [
+      { text: toDo, id: Date.now(), category: "TO_DO" }, ...oldToDos]
+    );
     setValue("toDo", "");
   }
   return (
